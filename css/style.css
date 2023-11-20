@@ -19,7 +19,14 @@ body {
 #main {
   flex: 3;
 }
-
+#header-wrapper {
+  display: flex;
+}
+#header-picture img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  transition: 0.5s;
+}
 td {
   padding: 4px;
 }
