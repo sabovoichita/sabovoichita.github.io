@@ -7,6 +7,8 @@ function showHome() {
 // showHome();
 
 function showSkills() {
+  var oldPage = document.getElementById("projects");
+  oldPage.style.display = "none";
   var page = document.getElementById("skills");
   page.style.display = "block";
 }
