@@ -18,6 +18,5 @@ function updateTitle(title) {
   console.info(typeof job);
   job.innerHTML = title;
 }
-variableExamples();
-
-updateTitle("future Developer");
+// variableExamples();
+// updateTitle("future Developer");
