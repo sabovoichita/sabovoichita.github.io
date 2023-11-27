@@ -15,7 +15,9 @@ function showSkills() {
   var page = document.getElementById("skills");
   page.style.display = "block";
 }
-// showSkills();
+// showSkills();document.getElementById("home").style.display = "none";
+document.getElementById("projects").style.display = "none";
+document.getElementById("languages").style.display = "none";
 
 function showProjects() {
   document.getElementById("home").style.display = "none";
