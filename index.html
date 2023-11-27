@@ -19,10 +19,12 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#" class="active">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a href="#" onclick="showHome()" class="active" s>HOME</a></li>
+        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li>
+          <a href="#" onclick="showProjects()">Projects</a>
+        </li>
+        <li><a href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
 
@@ -65,7 +67,7 @@
       </div>
 
       <div id="main">
-        <div class="page" style="display: none">
+        <div class="page" id="home">
           <h2>Home</h2>
           <p>Hi there. Welcome to my page.</p>
           <p>
@@ -97,7 +99,7 @@
           </p>
         </div>
 
-        <div class="page" id="skills" style="display: none">
+        <div class="page" id="skills">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -106,6 +108,7 @@
             <li>Transport Manager</li>
           </ul>
         </div>
+
         <div class="page" id="projects">
           <h2>Projects</h2>
           <ul>
@@ -136,7 +139,7 @@
           </ul>
         </div>
 
-        <div class="page" id="languages" style="display: none">
+        <div class="page" id="languages">
           <h2>Known Languages</h2>
           <table border="1">
             <tr>
