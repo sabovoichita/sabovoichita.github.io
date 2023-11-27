@@ -95,3 +95,23 @@ td.favorite {
   border-radius: 4px;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
 }
+
+footer {
+  background-color: #76b2ed;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 10px;
+}
+footer a {
+  color: black;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+footer a:hover {
+  text-decoration: none;
+  background-color: #223344;
+  color: white;
+}
