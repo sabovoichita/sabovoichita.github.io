@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body {
   margin: 0;
@@ -16,6 +17,7 @@ body {
 
 #side-menu {
   flex: 1;
+  color: #000;
 }
 #main {
   flex: 3;
@@ -53,7 +55,7 @@ th {
 
 #top-menu-bar {
   text-align: center;
-  background-color: #334455;
+  background-color: #77a8da;
   color: #fff;
   margin: 0;
   padding: 2px;
@@ -76,7 +78,7 @@ th {
 }
 #top-menu-bar a.active,
 #top-menu-bar a:hover {
-  color: #334455;
+  color: #6299d1;
   background: #fff;
 }
 
@@ -89,16 +91,23 @@ td.favorite {
   font-weight: normal;
 }
 .page {
+  display: block;
   background-color: #fff;
   margin: 10px;
   padding: 24px;
   border-radius: 4px;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    box-shadow: 5px 5px 10px blue;
+  }
 }
 
 footer {
   background-color: #76b2ed;
-  color: black;
+  color: #311b87;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -106,7 +115,7 @@ footer {
   gap: 10px;
 }
 footer a {
-  color: black;
+  color: #240be8;
   padding: 2px 5px;
   border-radius: 5px;
 }
@@ -114,4 +123,23 @@ footer a:hover {
   text-decoration: none;
   background-color: #223344;
   color: white;
+}
+h1 {
+  color: #675b9b;
+  font-family: ;
+}
+h2 {
+  color: #6757c5;
+}
+a {
+  color: #836cea;
+}
+#job-title {
+  color: #6f67a1;
+}
+p {
+  color: #473d77;
+}
+label {
+  color: #1f0db1;
 }
