@@ -201,3 +201,6 @@ input {
   color: rgb(21, 0, 255);
   border: 1px solid #240be8;
 }
+li {
+  padding: 5px;
+}
