@@ -145,6 +145,9 @@ td.favorite {
   animation: mymove 4s infinite;
 }
 
+.page h2 {
+  margin: 0 0 10px 0;
+}
 @keyframes mymove {
   50% {
     box-shadow: 5px 5px 10px blue;
