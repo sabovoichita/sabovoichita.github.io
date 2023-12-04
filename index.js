@@ -1,3 +1,5 @@
+var activePage = "home";
+
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -11,30 +13,25 @@ function show(id) {
 }
 
 function showHome() {
-  hide("skills");
-  hide("languages");
-  hide("skills");
+  hide(activePage);
   show("home");
+  activePage = "home";
 }
-showHome();
 
 function showSkills() {
-  hide("home");
-  hide("projects");
-  hide("languages");
+  hide(activePage);
   show("skills");
+  activePage = "skills";
 }
 
 function showProjects() {
-  hide("home");
-  hide("skills");
-  hide("languages");
+  hide(activePage);
   show("projects");
+  activePage = "projects";
 }
 
 function showLanguages() {
-  hide("home");
-  hide("skills");
-  hide("projects");
+  hide(activePage);
   show("languages");
+  activePage = "languages";
 }
