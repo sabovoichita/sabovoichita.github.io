@@ -1,5 +1,7 @@
+// global variables
 var activePage = "home";
 
+// functions
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -18,3 +20,6 @@ function showPage(id) {
   show(id);
   activePage = id;
 }
+
+//Execute on start
+showPage(activePage);
