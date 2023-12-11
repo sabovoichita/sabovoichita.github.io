@@ -138,6 +138,7 @@ td.favorite {
 }
 
 .page {
+  display: none;
   flex: 1;
   background-color: #fff;
   margin: 10px;
