@@ -1,5 +1,5 @@
 // global variables
-var activePage = "home";
+var activePage = "skills";
 
 // functions
 function hide(id) {
@@ -37,7 +37,14 @@ function initEvents() {
   });
 }
 
+function showSkills() {
+  var ul = document.querySelector("#skills ul");
+  ul.innerHTML = "<li>HTML</li>";
+  ul.innerHTML += "<li>CSS</li>";
+  ul.innerHTML = ul.innerHTML + "<li>JS</li>";
+}
 //Execute on start
+showSkills();
 showPage(activePage);
 initEvents();
 
