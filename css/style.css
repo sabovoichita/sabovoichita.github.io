@@ -314,19 +314,22 @@ footer {
   justify-content: center;
   gap: 10px;
 }
+footer img {
+  padding-top: 10px;
+}
 
 footer a {
-  color: var(--clr-blue);
-  background-color: var(--clr-white);
-  font-weight: 300;
-  padding: 2px 5px;
-  border-radius: 5px;
+  /* color: var(--clr-blue); */
+  /* background-color: var(--clr-white); */
+  /* font-weight: 300; */
+  /* padding: 2px 5px; */
+  /* border-radius: 2px; */
 }
 
-footer a:hover {
-  text-decoration: none;
-  background-color: var(--clr-yellow);
-  color: var(--clr-blue);
-  font-size: 20px;
-  transition: 0.4s;
-}
+/* footer a:hover { */
+/* text-decoration: none; */
+/* background-color: var(--clr-yellow); */
+/* color: var(--clr-blue); */
+/* font-size: 20px; */
+/* transition: 0.4s; */
+/* } */
