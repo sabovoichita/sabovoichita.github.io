@@ -43,21 +43,15 @@ function initEvents() {
   });
 }
 
-function showSkills() {
+function showSkills(skills) {
   var ul = $("#skills ul");
-
-  var skills = [
-    { name: "HTML", endorcements: 6, favorite: true },
-    { name: "CSS", endorcements: 5 },
-    { name: "JS", endorcements: 4, favorite: true },
-    { name: "word", endorcements: 1, favorite: false },
-  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
     if (skill.favorite == true) {
       cls = "favorite";
     }
+
     console.info("%o (%o)", skill.favorite, cls);
     return `<li class="${cls}">${skill.name}<span> - ${skill.endorcements}</span></li>`;
   });
@@ -65,8 +59,9 @@ function showSkills() {
 
   ul.innerHTML = text.join("");
 }
+
 //Execute on start
-showSkills();
+// showSkills([]);
 showPage(activePage);
 initEvents();
 
