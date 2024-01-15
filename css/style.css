@@ -337,3 +337,6 @@ footer a {
 #skills li span {
   color: grey;
 }
+.favorite {
+  color: blue;
+}

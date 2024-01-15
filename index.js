@@ -41,14 +41,19 @@ function showSkills() {
   var ul = document.querySelector("#skills ul");
 
   var skills = [
-    { name: "HTML", endorcements: 6 },
+    { name: "HTML", endorcements: 6, favorite: true },
     { name: "CSS", endorcements: 5 },
-    { name: "JS", endorcements: 4 },
+    { name: "JS", endorcements: 4, favorite: true },
+    { name: "word", endorcements: 1, favorite: false },
   ];
 
   var text = skills.map(function (skill) {
-    console.info("inside %o map", skill);
-    return `<li>${skill.name}<span> - ${skill.endorcements}</span></li>`;
+    var cls = "";
+    if (skill.favorite == true) {
+      cls = "favorite";
+    }
+    console.info("%o (%o)", skill.favorite, cls);
+    return `<li class="${cls}">${skill.name}<span> - ${skill.endorcements}</span></li>`;
   });
   console.warn(text);
 
