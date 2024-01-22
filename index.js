@@ -1,5 +1,5 @@
 // global variables
-var activePage = "home";
+var activePage = "skills";
 
 // functions
 function $(selector) {
@@ -59,6 +59,22 @@ function showSkills(skills) {
 
   ul.innerHTML = text.join("");
 }
+
+function loadSkills() {
+  var promise = fetch("skills.json");
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
+  });
+}
+
+//Execute on start
+showPage(activePage);
+initEvents();
+loadSkills();
+
 // function showRubik() {
 //   var rubik = $("rubik div");
 //   var cube = ["red", "green", "blue"].map(function () {
@@ -67,11 +83,7 @@ function showSkills(skills) {
 //   });
 // }
 
-//Execute on start
-// showSkills([]);
-showPage(activePage);
-initEvents();
-
+console.warn("after");
 function rubik() {
   const div1 = document.createElement("div");
   $("#rubik div").appendChild(div1);
