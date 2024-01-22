@@ -1,5 +1,5 @@
 // global variables
-var activePage = "skills";
+var activePage = "home";
 
 // functions
 function $(selector) {
@@ -59,11 +59,73 @@ function showSkills(skills) {
 
   ul.innerHTML = text.join("");
 }
+// function showRubik() {
+//   var rubik = $("rubik div");
+//   var cube = ["red", "green", "blue"].map(function () {
+//     return "<div></div>";
+//     rubik.innerHTML = cube;
+//   });
+// }
 
 //Execute on start
 // showSkills([]);
 showPage(activePage);
 initEvents();
+
+function rubik() {
+  const div1 = document.createElement("div");
+  $("#rubik div").appendChild(div1);
+
+  const div2 = document.createElement("div");
+  $("#rubik div").appendChild(div2);
+
+  const div3 = document.createElement("div");
+  $("#rubik div").appendChild(div3);
+
+  const div4 = document.createElement("div");
+  $("#rubik div").appendChild(div4);
+
+  const div5 = document.createElement("div");
+  $("#rubik div").appendChild(div5);
+
+  const div6 = document.createElement("div");
+  $("#rubik div").appendChild(div6);
+
+  const div7 = document.createElement("div");
+  $("#rubik div").appendChild(div7);
+
+  const div8 = document.createElement("div");
+  $("#rubik div").appendChild(div8);
+
+  const div9 = document.createElement("div");
+  $("#rubik div").appendChild(div9);
+}
+rubik();
+
+// Function to Create a table with JS
+
+// function rubikTable() {
+//   const tbl = document.createElement("table");
+//   $("#rubik div").appendChild(tbl);
+//   const tblBody = document.createElement("tbody");
+//   $("#rubik div").appendChild(tblBody);
+//   for (let i = 0; i < 3; i++) {
+//     const row = document.createElement("tr");
+//     for (let j = 0; j < 3; j++) {
+//       const cell = document.createElement("td");
+//       row.appendChild(cell);
+//     }
+//     tblBody.appendChild(row);
+//   }
+//   tbl.appendChild(tblBody);
+//   tbl.setAttribute("border", "2");
+// }
+// rubikTable();
+
+// function myFunction() {
+//   var x = document.getElementById("rubik-face").rows[0].cells;
+//   x[0].innerHTML = "NEW CONTENT";
+// }
 
 // <-- /////////////////////////     TOGGLE BTN DARK MODE START     /////////////////////////// --> //
 

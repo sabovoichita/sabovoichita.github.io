@@ -95,20 +95,7 @@ input {
 }
 /* --------------------------- Side Section- Rubik Section ------------------------------  */
 
-.rubik-face {
-  background-color: #0d0d0d;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  max-width: 200px;
-  padding: 4px;
-  grid-gap: 4px;
-}
-.rubik-face > div {
-  border: 1px solid #0d0d0d33;
-  padding-top: 100%;
-  background-color: var(--clr-white);
-  border-radius: 0.2rem;
-}
+/* in the file rubik.css */
 
 /* --------------------------- Header Section ------------------------------  */
 
