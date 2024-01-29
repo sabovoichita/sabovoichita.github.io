@@ -1,5 +1,5 @@
 // global variables
-var activePage = "skills";
+var activePage = "projects";
 
 // functions
 function $(selector) {
@@ -50,6 +50,9 @@ function sortSkillsByEndorcements(a, b) {
 function sortByName(a, b) {
   return a.name.localeCompare(b.name);
 }
+function sortProjects(a, b) {
+  return a.Project.localeCompare(b.Project);
+}
 
 function showSkills(skills) {
   skills.sort(sortByName);
@@ -70,6 +73,17 @@ function showSkills(skills) {
 
   ul.innerHTML = text.join("");
 }
+// function showProjects(projects) {
+//   projects.sort(sortProjects);
+//   var ulProjects = $("#projects ul");
+
+//   var textP= projects.map(function(project){
+//     var clsP = "";
+//     if (project.Completed == true){
+//       clsP="Completed";
+//     });
+//   ulProjects.innerHTML = textP.join("");
+// }
 
 function loadSkills() {
   fetch("skills.json").then(function (r) {
@@ -78,11 +92,61 @@ function loadSkills() {
     });
   });
 }
+// function loadProjects() {
+//   fetch("projects.json").then(function (r) {
+//     r.json().then(function (skills) {
+//       showProjects(projects);
+//     });
+//   });
+// }
 
+function loadLanguages() {
+  fetch("languages.json")
+    .then((response) => response.json())
+    .then((languages) => {
+      printJsonIntoTable(languages, "languages-table");
+    });
+}
+
+function printJsonIntoTable(jsonData, elementId) {
+  var col = [];
+  for (var i = 0; i < jsonData.length; i++) {
+    for (var key in jsonData[i]) {
+      if (col.indexOf(key) === -1) {
+        col.push(key);
+      }
+    }
+  }
+
+  //This Code creates HTML table
+  var table = document.createElement("table");
+  //This Code gets rows for header creader above.
+  var tr = table.insertRow(-1);
+  for (var i = 0; i < col.length; i++) {
+    var th = document.createElement("th");
+    th.innerHTML = col[i];
+    tr.appendChild(th);
+  }
+  //This Code adds data to table as rows
+  for (var i = 0; i < jsonData.length; i++) {
+    tr = table.insertRow(-1);
+
+    for (var j = 0; j < col.length; j++) {
+      var tabCell = tr.insertCell(-1);
+      tabCell.innerHTML = jsonData[i][col[j]];
+    }
+  }
+  //This Code gets the all columns for header
+  var divContainer = document.getElementById(elementId);
+  divContainer.innerHTML = " ";
+  divContainer.appendChild(table);
+}
 //Execute on start
 showPage(activePage);
 initEvents();
 loadSkills();
+loadLanguages();
+// loadProjects();
 
 // function showRubik() {
 //   var rubik = $("rubik div");

@@ -98,7 +98,10 @@ input {
 /* in the file rubik.css */
 
 /* --------------------------- Header Section ------------------------------  */
-
+header {
+  position: sticky;
+  top: 0;
+}
 #header-wrapper {
   display: flex;
   flex-direction: row;
@@ -299,19 +302,21 @@ footer {
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
+  position: sticky;
+  bottom: 0;
   gap: 10px;
 }
 footer img {
   padding-top: 10px;
 }
 
-footer a {
-  /* color: var(--clr-blue); */
-  /* background-color: var(--clr-white); */
-  /* font-weight: 300; */
-  /* padding: 2px 5px; */
-  /* border-radius: 2px; */
-}
+/* footer a { */
+/* color: var(--clr-blue); */
+/* background-color: var(--clr-white); */
+/* font-weight: 300; */
+/* padding: 2px 5px; */
+/* border-radius: 2px; */
+/* } */
 
 /* footer a:hover { */
 /* text-decoration: none; */

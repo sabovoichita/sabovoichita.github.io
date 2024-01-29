@@ -1,0 +1,14 @@
+[
+  {
+    "Project": "FastTrackIT",
+    "Course": "Web Development Course",
+    "Completed": true
+  },
+  {
+    "Project": "Udemy Course",
+    "Course": "Become a WEB Developer from Scratch, step by step Guide",
+    "Completed": true
+  },
+  { "Project": "FreeCodeCamp", "Course": "Responsive Web Design" },
+  { "Project": "W3School", "Course": "HTML, CSS, JavaScript" }
+]
