@@ -1,5 +1,5 @@
 // global variables
-var activePage = "projects";
+var activePage = "home";
 
 // functions
 function $(selector) {
