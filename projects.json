@@ -2,13 +2,17 @@
   {
     "Project": "FastTrackIT",
     "Course": "Web Development Course",
-    "Completed": true
+    "Status": true
   },
   {
     "Project": "Udemy Course",
     "Course": "Become a WEB Developer from Scratch, step by step Guide",
-    "Completed": true
+    "Status": true
   },
-  { "Project": "FreeCodeCamp", "Course": "Responsive Web Design" },
-  { "Project": "W3School", "Course": "HTML, CSS, JavaScript" }
+  {
+    "Project": "FreeCodeCamp",
+    "Course": "Responsive Web Design",
+    "Status": false
+  },
+  { "Project": "W3School", "Course": "HTML, CSS, JavaScript", "Status": false }
 ]
