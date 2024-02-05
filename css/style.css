@@ -236,6 +236,9 @@ th {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+table:nth-of-type(tr) {
+  background-color: #727272;
+}
 th {
   padding: 10px;
   font-size: larger;
