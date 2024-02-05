@@ -282,6 +282,7 @@ span:hover {
 
 a {
   color: var(--clr-blue);
+  text-decoration: none;
 }
 
 p {
