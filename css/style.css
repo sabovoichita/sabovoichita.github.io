@@ -352,4 +352,7 @@ footer img {
   header {
     min-width: 600px;
   }
+  footer {
+    min-width: 600px;
+  }
 }
