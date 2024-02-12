@@ -131,13 +131,13 @@ header {
 }
 
 h1 {
-  color: var(--clr-white);
+  color: var(--clr-sec-dark);
   font-size: 35px;
   font-weight: 900;
   letter-spacing: 0.5vw;
 }
 #job-title {
-  color: var(--clr-white);
+  color: var(--clr-sec-dark);
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.5vw;
@@ -200,7 +200,7 @@ h1 {
 #top-menu-bar a:hover {
   font-size: 25px;
   background-color: var(--clr-yellow);
-  color: var(--clr-blue);
+  color: var(--clr-sec-dark);
   border-bottom: 2px solid var(--clr-blue);
   border-right: 2px solid var(--clr-blue);
 }
