@@ -336,3 +336,18 @@ footer img {
 .favorite {
   color: blue;
 }
+/* --------------------------- Media Section ------------------------------  */
+@media (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+  #content {
+    flex-direction: column-reverse;
+  }
+  #top-menu-bar a {
+    padding: 5px 10px 5px 10px;
+  }
+  header {
+    min-width: 600px;
+  }
+}
