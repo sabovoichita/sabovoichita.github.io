@@ -55,8 +55,8 @@ function sortProjects(a, b) {
 }
 
 function showSkills(skills) {
-  skills.sort(sortByName);
-  // skills.sort(sortSkillsByEndorcements);
+  // skills.sort(sortByName);
+  skills.sort(sortSkillsByEndorcements);
 
   const ul = $("#skills ul");
 

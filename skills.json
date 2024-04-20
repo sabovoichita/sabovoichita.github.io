@@ -1,6 +1,10 @@
 [
   { "name": "HTML", "endorcements": 6, "favorite": true },
-  { "name": "CSS", "endorcements": 5 },
+  { "name": "CSS", "endorcements": 5, "favorite": true },
   { "name": "JS", "endorcements": 8, "favorite": true },
-  { "name": "Word", "endorcements": 10, "favorite": false }
+  { "name": "Git", "endorcements": 1 },
+  { "name": "API", "endorcements": 1 },
+  { "name": "Word", "endorcements": 10, "favorite": false },
+  { "name": "Bootstrap", "endorcements": 1 },
+  { "name": "React", "endorcements": 1 }
 ]
