@@ -32,10 +32,7 @@ function initEvents() {
 
 function loadSkills() {
   fetch("skills.json")
-    .then((response) => {
-      console.info("done?");
-      return response.json();
-    })
+    .then((response) => response.json())
     .then((skills) => {
       printSkills(skills);
     });
@@ -51,17 +48,11 @@ function printSkills(skills) {
 }
 
 function sortSkillsByEndorcements(skills) {
-  return skills.sort((a, b) => {
-    // console.log(a, b);
-    return b.endorcements - a.endorcements;
-  });
+  return skills.sort((a, b) => b.endorcements - a.endorcements);
 }
 
 function sortSkillsByName(skills) {
-  return skills.sort((a, b) => {
-    // console.log(a, b);
-    return a.name.localeComnpare(b.name);
-  });
+  return skills.sort((a, b) => a.name.localeComnpare(b.name));
 }
 
 showPage(activePage);
