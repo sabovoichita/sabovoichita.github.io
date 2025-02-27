@@ -29,10 +29,19 @@ $("#top-menu-bar").addEventListener("click", function (e) {
   }
 });
 
-var skills = ["HTML - 2", "CSS - 1", "JavaScript - 4"];
-var skillsMapResult = skills.map(function (skill) {
-  console.info("inside map", skill);
-  return `<li>${skill}</li>`;
-});
-// console.warn("result:", skillsMapResult);
-$("#skills ul").innerHTML = skillsMapResult.join("");
+fetch("skills.json")
+  .then(function (response) {
+    console.info("done?");
+    return response.json();
+  })
+  .then(function (skills) {
+    printSkills(skills);
+  });
+
+function printSkills(skills) {
+  var skillsMapResult = skills.map(function (skill) {
+    var cls = skill.favorite ? "favorite" : "";
+    return `<li class="${cls}">${skill.name} <span>- ${skill.endorcements}</span></li>`;
+  });
+  $("#skills ul").innerHTML = skillsMapResult.join("");
+}
