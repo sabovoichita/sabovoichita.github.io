@@ -1,4 +1,4 @@
-var activePage = "skills";
+let activePage = "skills";
 
 function $(selector) {
   return document.querySelector(selector);
@@ -22,7 +22,7 @@ function showPage(id) {
 
 function initEvents() {
   $("#top-menu-bar").addEventListener("click", function (e) {
-    var id = e.target.dataset.page;
+    const id = e.target.dataset.page;
     console.info("click on menu bar", id);
     if (id) {
       showPage(id);
@@ -40,10 +40,11 @@ function loadSkills() {
       printSkills(skills);
     });
 }
+
 function printSkills(skills) {
   skills = sortSkillsByEndorcements(skills);
-  var skillsMapResult = skills.map(function (skill) {
-    var cls = skill.favorite ? "favorite" : "";
+  const skillsMapResult = skills.map(function (skill) {
+    const cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name} <span>- ${skill.endorcements}</span></li>`;
   });
   $("#skills ul").innerHTML = skillsMapResult.join("");
