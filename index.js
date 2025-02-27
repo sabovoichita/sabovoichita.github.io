@@ -22,7 +22,7 @@ function showLanguagesPage() {
   document.getElementById("skills").style.display = "none";
   document.getElementById("languages").style.display = "block";
 }
-showHomePage();
+showSkillsPage();
 
 var homeLink = document.querySelectorAll("#top-menu-bar a")[0];
 homeLink.addEventListener("click", showHomePage);
