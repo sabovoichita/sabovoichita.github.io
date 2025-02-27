@@ -4,4 +4,4 @@ My personal CV made with HTML, CSS and JS.
 
 ## live
 
-[sabovoichita.github.io](sabovoichita.github.io)
+[sabovoichita.github.io](https://sabovoichita.github.io/)
