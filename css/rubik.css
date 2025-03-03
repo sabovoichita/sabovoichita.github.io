@@ -5,16 +5,13 @@
   max-width: fit-content;
   padding: 4px;
   grid-gap: 4px;
+  margin: 0 auto;
 }
-/* .rubik-face > div {
-  border: 2px solid #0d0d0d33;
-  padding-top: 100%;
-  background-color: var(--clr-white);
-  border-radius: 0.4rem;
-} */
+
 div#rubik-face div {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
 }
 
 div#rubik-face div:nth-child(1) {
@@ -67,4 +64,35 @@ div#rubik-face div:nth-child(9) {
 
 div#rubik-face > tbl > tbody > tr > td[1] {
   background-color: red;
+}
+
+@media (max-width: 768px) {
+  div#rubik-face div {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  div#rubik-face div {
+    width: 25px;
+    height: 25px;
+  }
+
+  #rubik-face {
+    padding: 3px;
+    grid-gap: 3px;
+  }
+}
+
+@media (max-width: 320px) {
+  div#rubik-face div {
+    width: 20px;
+    height: 20px;
+  }
+
+  #rubik-face {
+    padding: 2px;
+    grid-gap: 2px;
+  }
 }
